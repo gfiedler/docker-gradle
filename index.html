@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>docker-gradle by frekele</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">docker-gradle</h1>
+      <h2 class="project-tagline">Gradle (s6-overlay) Docker Image - Extends frekele/java.</h2>
+      <a href="https://github.com/frekele/docker-gradle" class="btn">View on GitHub</a>
+      <a href="https://github.com/frekele/docker-gradle/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/frekele/docker-gradle/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="gradle-s6-overlay-docker-image" class="anchor" href="#gradle-s6-overlay-docker-image" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Gradle (s6-overlay) Docker Image</h1>
+
+<p><a href="https://hub.docker.com/r/frekele/gradle/"><img src="https://img.shields.io/docker/pulls/frekele/gradle.svg" alt="Docker Pulls"></a>
+<a href="https://hub.docker.com/r/frekele/gradle/"><img src="https://img.shields.io/docker/stars/frekele/gradle.svg" alt="Docker Stars"></a>
+<a href="https://github.com/frekele/docker-gradle/issues"><img src="https://img.shields.io/github/issues/frekele/docker-gradle.svg" alt="GitHub issues"></a>
+<a href="https://github.com/frekele/docker-gradle/network"><img src="https://img.shields.io/github/forks/frekele/docker-gradle.svg" alt="GitHub forks"></a>
+<a href="https://github.com/frekele/docker-gradle/stargazers"><img src="https://img.shields.io/github/stars/frekele/docker-gradle.svg" alt="GitHub stars"></a></p>
+
+<p>Repository: <a href="https://hub.docker.com/r/frekele/gradle">https://hub.docker.com/r/frekele/gradle</a></p>
+
+<h4>
+<a id="gradle-2141-with-oracle-jdk-branches" class="anchor" href="#gradle-2141-with-oracle-jdk-branches" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Gradle 2.14.1 with Oracle JDK Branches:</h4>
+
+<table>
+<thead>
+<tr>
+<th>Branch</th>
+<th>From</th>
+<th>Usage</th>
+<th>Tag Names</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<a href="https://github.com/frekele/docker-gradle/blob/2.14.1-jdk8/Dockerfile">2.14.1-jdk8</a> - latest</td>
+<td>frekele/java:jdk8</td>
+<td>Production</td>
+<td>2.14.1-jdk8, 2-jdk8, latest</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.14.1-jdk8u102/Dockerfile">2.14.1-jdk8u102</a></td>
+<td>frekele/java:jdk8u102</td>
+<td>Production</td>
+<td>2.14.1-jdk8u102</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.14.1-jdk8u101/Dockerfile">2.14.1-jdk8u101</a></td>
+<td>frekele/java:jdk8u101</td>
+<td>Production</td>
+<td>2.14.1-jdk8u101</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.14.1-jdk8u92/Dockerfile">2.14.1-jdk8u92</a></td>
+<td>frekele/java:jdk8u92</td>
+<td>Production</td>
+<td>2.14.1-jdk8u92</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.14.1-jdk8u91/Dockerfile">2.14.1-jdk8u91</a></td>
+<td>frekele/java:jdk8u91</td>
+<td>Production</td>
+<td>2.14.1-jdk8u91</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.14.1-jdk7/Dockerfile">2.14.1-jdk7</a></td>
+<td>frekele/java:jdk7</td>
+<td>Production</td>
+<td>2.14.1-jdk7</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.14.1-jdk7u80/Dockerfile">2.14.1-jdk7u80</a></td>
+<td>frekele/java:jdk7u80</td>
+<td>Production</td>
+<td>2.14.1-jdk7u80</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.14.1-jdk7u79/Dockerfile">2.14.1-jdk7u79</a></td>
+<td>frekele/java:jdk7u79</td>
+<td>Production</td>
+<td>2.14.1-jdk7u79</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/dev/Dockerfile">dev</a></td>
+<td>frekele/java:jdk8</td>
+<td>Development</td>
+<td>dev</td>
+</tr>
+</tbody>
+</table>
+
+<h4>
+<a id="gradle-214-with-oracle-jdk-branches" class="anchor" href="#gradle-214-with-oracle-jdk-branches" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Gradle 2.14 with Oracle JDK Branches:</h4>
+
+<table>
+<thead>
+<tr>
+<th>Branch</th>
+<th>From</th>
+<th>Usage</th>
+<th>Tag Names</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.14-jdk8/Dockerfile">2.14-jdk8</a></td>
+<td>frekele/java:jdk8</td>
+<td>Production</td>
+<td>2.14-jdk8</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.14-jdk8u102/Dockerfile">2.14-jdk8u102</a></td>
+<td>frekele/java:jdk8u102</td>
+<td>Production</td>
+<td>2.14-jdk8u102</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.14-jdk8u101/Dockerfile">2.14-jdk8u101</a></td>
+<td>frekele/java:jdk8u101</td>
+<td>Production</td>
+<td>2.14-jdk8u101</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.14-jdk8u92/Dockerfile">2.14-jdk8u92</a></td>
+<td>frekele/java:jdk8u92</td>
+<td>Production</td>
+<td>2.14-jdk8u92</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.14-jdk8u91/Dockerfile">2.14-jdk8u91</a></td>
+<td>frekele/java:jdk8u91</td>
+<td>Production</td>
+<td>2.14-jdk8u91</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.14-jdk7/Dockerfile">2.14-jdk7</a></td>
+<td>frekele/java:jdk7</td>
+<td>Production</td>
+<td>2.14-jdk7</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.14-jdk7u80/Dockerfile">2.14-jdk7u80</a></td>
+<td>frekele/java:jdk7u80</td>
+<td>Production</td>
+<td>2.14-jdk7u80</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.14-jdk7u79/Dockerfile">2.14-jdk7u79</a></td>
+<td>frekele/java:jdk7u79</td>
+<td>Production</td>
+<td>2.14-jdk7u79</td>
+</tr>
+</tbody>
+</table>
+
+<h4>
+<a id="gradle-213-with-oracle-jdk-branches" class="anchor" href="#gradle-213-with-oracle-jdk-branches" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Gradle 2.13 with Oracle JDK Branches:</h4>
+
+<table>
+<thead>
+<tr>
+<th>Branch</th>
+<th>From</th>
+<th>Usage</th>
+<th>Tag Names</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.13-jdk8/Dockerfile">2.13-jdk8</a></td>
+<td>frekele/java:jdk8</td>
+<td>Production</td>
+<td>2.13-jdk8</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.13-jdk8u102/Dockerfile">2.13-jdk8u102</a></td>
+<td>frekele/java:jdk8u102</td>
+<td>Production</td>
+<td>2.13-jdk8u102</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.13-jdk8u101/Dockerfile">2.13-jdk8u101</a></td>
+<td>frekele/java:jdk8u101</td>
+<td>Production</td>
+<td>2.13-jdk8u101</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.13-jdk8u92/Dockerfile">2.13-jdk8u92</a></td>
+<td>frekele/java:jdk8u92</td>
+<td>Production</td>
+<td>2.13-jdk8u92</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.13-jdk8u91/Dockerfile">2.13-jdk8u91</a></td>
+<td>frekele/java:jdk8u91</td>
+<td>Production</td>
+<td>2.13-jdk8u91</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.13-jdk7/Dockerfile">2.13-jdk7</a></td>
+<td>frekele/java:jdk7</td>
+<td>Production</td>
+<td>2.13-jdk7</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.13-jdk7u80/Dockerfile">2.13-jdk7u80</a></td>
+<td>frekele/java:jdk7u80</td>
+<td>Production</td>
+<td>2.13-jdk7u80</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.13-jdk7u79/Dockerfile">2.13-jdk7u79</a></td>
+<td>frekele/java:jdk7u79</td>
+<td>Production</td>
+<td>2.13-jdk7u79</td>
+</tr>
+</tbody>
+</table>
+
+<h4>
+<a id="gradle-212-with-oracle-jdk-branches" class="anchor" href="#gradle-212-with-oracle-jdk-branches" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Gradle 2.12 with Oracle JDK Branches:</h4>
+
+<table>
+<thead>
+<tr>
+<th>Branch</th>
+<th>From</th>
+<th>Usage</th>
+<th>Tag Names</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.12-jdk8/Dockerfile">2.12-jdk8</a></td>
+<td>frekele/java:jdk8</td>
+<td>Production</td>
+<td>2.12-jdk8</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.12-jdk8u102/Dockerfile">2.12-jdk8u102</a></td>
+<td>frekele/java:jdk8u102</td>
+<td>Production</td>
+<td>2.12-jdk8u102</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.12-jdk8u101/Dockerfile">2.12-jdk8u101</a></td>
+<td>frekele/java:jdk8u101</td>
+<td>Production</td>
+<td>2.12-jdk8u101</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.12-jdk8u92/Dockerfile">2.12-jdk8u92</a></td>
+<td>frekele/java:jdk8u92</td>
+<td>Production</td>
+<td>2.12-jdk8u92</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.12-jdk8u91/Dockerfile">2.12-jdk8u91</a></td>
+<td>frekele/java:jdk8u91</td>
+<td>Production</td>
+<td>2.12-jdk8u91</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.12-jdk7/Dockerfile">2.12-jdk7</a></td>
+<td>frekele/java:jdk7</td>
+<td>Production</td>
+<td>2.12-jdk7</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.12-jdk7u80/Dockerfile">2.12-jdk7u80</a></td>
+<td>frekele/java:jdk7u80</td>
+<td>Production</td>
+<td>2.12-jdk7u80</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.12-jdk7u79/Dockerfile">2.12-jdk7u79</a></td>
+<td>frekele/java:jdk7u79</td>
+<td>Production</td>
+<td>2.12-jdk7u79</td>
+</tr>
+</tbody>
+</table>
+
+<h4>
+<a id="gradle-211-with-oracle-jdk-branches" class="anchor" href="#gradle-211-with-oracle-jdk-branches" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Gradle 2.11 with Oracle JDK Branches:</h4>
+
+<table>
+<thead>
+<tr>
+<th>Branch</th>
+<th>From</th>
+<th>Usage</th>
+<th>Tag Names</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.11-jdk8/Dockerfile">2.11-jdk8</a></td>
+<td>frekele/java:jdk8</td>
+<td>Production</td>
+<td>2.11-jdk8</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.11-jdk8u102/Dockerfile">2.11-jdk8u102</a></td>
+<td>frekele/java:jdk8u102</td>
+<td>Production</td>
+<td>2.11-jdk8u102</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.11-jdk8u101/Dockerfile">2.11-jdk8u101</a></td>
+<td>frekele/java:jdk8u101</td>
+<td>Production</td>
+<td>2.11-jdk8u101</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.11-jdk8u92/Dockerfile">2.11-jdk8u92</a></td>
+<td>frekele/java:jdk8u92</td>
+<td>Production</td>
+<td>2.11-jdk8u92</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.11-jdk8u91/Dockerfile">2.11-jdk8u91</a></td>
+<td>frekele/java:jdk8u91</td>
+<td>Production</td>
+<td>2.11-jdk8u91</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.11-jdk7/Dockerfile">2.11-jdk7</a></td>
+<td>frekele/java:jdk7</td>
+<td>Production</td>
+<td>2.11-jdk7</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.11-jdk7u80/Dockerfile">2.11-jdk7u80</a></td>
+<td>frekele/java:jdk7u80</td>
+<td>Production</td>
+<td>2.11-jdk7u80</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.11-jdk7u79/Dockerfile">2.11-jdk7u79</a></td>
+<td>frekele/java:jdk7u79</td>
+<td>Production</td>
+<td>2.11-jdk7u79</td>
+</tr>
+</tbody>
+</table>
+
+<h4>
+<a id="gradle-210-with-oracle-jdk-branches" class="anchor" href="#gradle-210-with-oracle-jdk-branches" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Gradle 2.10 with Oracle JDK Branches:</h4>
+
+<table>
+<thead>
+<tr>
+<th>Branch</th>
+<th>From</th>
+<th>Usage</th>
+<th>Tag Names</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.10-jdk8/Dockerfile">2.10-jdk8</a></td>
+<td>frekele/java:jdk8</td>
+<td>Production</td>
+<td>2.10-jdk8</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.10-jdk8u102/Dockerfile">2.10-jdk8u102</a></td>
+<td>frekele/java:jdk8u102</td>
+<td>Production</td>
+<td>2.10-jdk8u102</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.10-jdk8u101/Dockerfile">2.10-jdk8u101</a></td>
+<td>frekele/java:jdk8u101</td>
+<td>Production</td>
+<td>2.10-jdk8u101</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.10-jdk8u92/Dockerfile">2.10-jdk8u92</a></td>
+<td>frekele/java:jdk8u92</td>
+<td>Production</td>
+<td>2.10-jdk8u92</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.10-jdk8u91/Dockerfile">2.10-jdk8u91</a></td>
+<td>frekele/java:jdk8u91</td>
+<td>Production</td>
+<td>2.10-jdk8u91</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.10-jdk7/Dockerfile">2.10-jdk7</a></td>
+<td>frekele/java:jdk7</td>
+<td>Production</td>
+<td>2.10-jdk7</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.10-jdk7u80/Dockerfile">2.10-jdk7u80</a></td>
+<td>frekele/java:jdk7u80</td>
+<td>Production</td>
+<td>2.10-jdk7u80</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.10-jdk7u79/Dockerfile">2.10-jdk7u79</a></td>
+<td>frekele/java:jdk7u79</td>
+<td>Production</td>
+<td>2.10-jdk7u79</td>
+</tr>
+</tbody>
+</table>
+
+<h4>
+<a id="gradle-29-with-oracle-jdk-branches" class="anchor" href="#gradle-29-with-oracle-jdk-branches" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Gradle 2.9 with Oracle JDK Branches:</h4>
+
+<table>
+<thead>
+<tr>
+<th>Branch</th>
+<th>From</th>
+<th>Usage</th>
+<th>Tag Names</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.9-jdk8/Dockerfile">2.9-jdk8</a></td>
+<td>frekele/java:jdk8</td>
+<td>Production</td>
+<td>2.9-jdk8</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.9-jdk8u102/Dockerfile">2.9-jdk8u102</a></td>
+<td>frekele/java:jdk8u102</td>
+<td>Production</td>
+<td>2.9-jdk8u102</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.9-jdk8u101/Dockerfile">2.9-jdk8u101</a></td>
+<td>frekele/java:jdk8u101</td>
+<td>Production</td>
+<td>2.9-jdk8u101</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.9-jdk8u92/Dockerfile">2.9-jdk8u92</a></td>
+<td>frekele/java:jdk8u92</td>
+<td>Production</td>
+<td>2.9-jdk8u92</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.9-jdk8u91/Dockerfile">2.9-jdk8u91</a></td>
+<td>frekele/java:jdk8u91</td>
+<td>Production</td>
+<td>2.9-jdk8u91</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.9-jdk7/Dockerfile">2.9-jdk7</a></td>
+<td>frekele/java:jdk7</td>
+<td>Production</td>
+<td>2.9-jdk7</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.9-jdk7u80/Dockerfile">2.9-jdk7u80</a></td>
+<td>frekele/java:jdk7u80</td>
+<td>Production</td>
+<td>2.9-jdk7u80</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.9-jdk7u79/Dockerfile">2.9-jdk7u79</a></td>
+<td>frekele/java:jdk7u79</td>
+<td>Production</td>
+<td>2.9-jdk7u79</td>
+</tr>
+</tbody>
+</table>
+
+<h4>
+<a id="gradle-28-with-oracle-jdk-branches" class="anchor" href="#gradle-28-with-oracle-jdk-branches" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Gradle 2.8 with Oracle JDK Branches:</h4>
+
+<table>
+<thead>
+<tr>
+<th>Branch</th>
+<th>From</th>
+<th>Usage</th>
+<th>Tag Names</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.8-jdk8/Dockerfile">2.8-jdk8</a></td>
+<td>frekele/java:jdk8</td>
+<td>Production</td>
+<td>2.8-jdk8</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.8-jdk8u102/Dockerfile">2.8-jdk8u102</a></td>
+<td>frekele/java:jdk8u102</td>
+<td>Production</td>
+<td>2.8-jdk8u102</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.8-jdk8u101/Dockerfile">2.8-jdk8u101</a></td>
+<td>frekele/java:jdk8u101</td>
+<td>Production</td>
+<td>2.8-jdk8u101</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.8-jdk8u92/Dockerfile">2.8-jdk8u92</a></td>
+<td>frekele/java:jdk8u92</td>
+<td>Production</td>
+<td>2.8-jdk8u92</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.8-jdk8u91/Dockerfile">2.8-jdk8u91</a></td>
+<td>frekele/java:jdk8u91</td>
+<td>Production</td>
+<td>2.8-jdk8u91</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.8-jdk7/Dockerfile">2.8-jdk7</a></td>
+<td>frekele/java:jdk7</td>
+<td>Production</td>
+<td>2.8-jdk7</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.8-jdk7u80/Dockerfile">2.8-jdk7u80</a></td>
+<td>frekele/java:jdk7u80</td>
+<td>Production</td>
+<td>2.8-jdk7u80</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.8-jdk7u79/Dockerfile">2.8-jdk7u79</a></td>
+<td>frekele/java:jdk7u79</td>
+<td>Production</td>
+<td>2.8-jdk7u79</td>
+</tr>
+</tbody>
+</table>
+
+<h4>
+<a id="gradle-27-with-oracle-jdk-branches" class="anchor" href="#gradle-27-with-oracle-jdk-branches" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Gradle 2.7 with Oracle JDK Branches:</h4>
+
+<table>
+<thead>
+<tr>
+<th>Branch</th>
+<th>From</th>
+<th>Usage</th>
+<th>Tag Names</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.7-jdk8/Dockerfile">2.7-jdk8</a></td>
+<td>frekele/java:jdk8</td>
+<td>Production</td>
+<td>2.7-jdk8</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.7-jdk8u102/Dockerfile">2.7-jdk8u102</a></td>
+<td>frekele/java:jdk8u102</td>
+<td>Production</td>
+<td>2.7-jdk8u102</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.7-jdk8u101/Dockerfile">2.7-jdk8u101</a></td>
+<td>frekele/java:jdk8u101</td>
+<td>Production</td>
+<td>2.7-jdk8u101</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.7-jdk8u92/Dockerfile">2.7-jdk8u92</a></td>
+<td>frekele/java:jdk8u92</td>
+<td>Production</td>
+<td>2.7-jdk8u92</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.7-jdk8u91/Dockerfile">2.7-jdk8u91</a></td>
+<td>frekele/java:jdk8u91</td>
+<td>Production</td>
+<td>2.7-jdk8u91</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.7-jdk7/Dockerfile">2.7-jdk7</a></td>
+<td>frekele/java:jdk7</td>
+<td>Production</td>
+<td>2.7-jdk7</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.7-jdk7u80/Dockerfile">2.7-jdk7u80</a></td>
+<td>frekele/java:jdk7u80</td>
+<td>Production</td>
+<td>2.7-jdk7u80</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.7-jdk7u79/Dockerfile">2.7-jdk7u79</a></td>
+<td>frekele/java:jdk7u79</td>
+<td>Production</td>
+<td>2.7-jdk7u79</td>
+</tr>
+</tbody>
+</table>
+
+<h4>
+<a id="gradle-26-with-oracle-jdk-branches" class="anchor" href="#gradle-26-with-oracle-jdk-branches" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Gradle 2.6 with Oracle JDK Branches:</h4>
+
+<table>
+<thead>
+<tr>
+<th>Branch</th>
+<th>From</th>
+<th>Usage</th>
+<th>Tag Names</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.6-jdk8/Dockerfile">2.6-jdk8</a></td>
+<td>frekele/java:jdk8</td>
+<td>Production</td>
+<td>2.6-jdk8</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.6-jdk8u102/Dockerfile">2.6-jdk8u102</a></td>
+<td>frekele/java:jdk8u102</td>
+<td>Production</td>
+<td>2.6-jdk8u102</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.6-jdk8u101/Dockerfile">2.6-jdk8u101</a></td>
+<td>frekele/java:jdk8u101</td>
+<td>Production</td>
+<td>2.6-jdk8u101</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.6-jdk8u92/Dockerfile">2.6-jdk8u92</a></td>
+<td>frekele/java:jdk8u92</td>
+<td>Production</td>
+<td>2.6-jdk8u92</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.6-jdk8u91/Dockerfile">2.6-jdk8u91</a></td>
+<td>frekele/java:jdk8u91</td>
+<td>Production</td>
+<td>2.6-jdk8u91</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.6-jdk7/Dockerfile">2.6-jdk7</a></td>
+<td>frekele/java:jdk7</td>
+<td>Production</td>
+<td>2.6-jdk7</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.6-jdk7u80/Dockerfile">2.6-jdk7u80</a></td>
+<td>frekele/java:jdk7u80</td>
+<td>Production</td>
+<td>2.6-jdk7u80</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.6-jdk7u79/Dockerfile">2.6-jdk7u79</a></td>
+<td>frekele/java:jdk7u79</td>
+<td>Production</td>
+<td>2.6-jdk7u79</td>
+</tr>
+</tbody>
+</table>
+
+<h4>
+<a id="gradle-25-with-oracle-jdk-branches" class="anchor" href="#gradle-25-with-oracle-jdk-branches" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Gradle 2.5 with Oracle JDK Branches:</h4>
+
+<table>
+<thead>
+<tr>
+<th>Branch</th>
+<th>From</th>
+<th>Usage</th>
+<th>Tag Names</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.5-jdk8/Dockerfile">2.5-jdk8</a></td>
+<td>frekele/java:jdk8</td>
+<td>Production</td>
+<td>2.5-jdk8</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.5-jdk8u102/Dockerfile">2.5-jdk8u102</a></td>
+<td>frekele/java:jdk8u102</td>
+<td>Production</td>
+<td>2.5-jdk8u102</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.5-jdk8u101/Dockerfile">2.5-jdk8u101</a></td>
+<td>frekele/java:jdk8u101</td>
+<td>Production</td>
+<td>2.5-jdk8u101</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.5-jdk8u92/Dockerfile">2.5-jdk8u92</a></td>
+<td>frekele/java:jdk8u92</td>
+<td>Production</td>
+<td>2.5-jdk8u92</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.5-jdk8u91/Dockerfile">2.5-jdk8u91</a></td>
+<td>frekele/java:jdk8u91</td>
+<td>Production</td>
+<td>2.5-jdk8u91</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.5-jdk7/Dockerfile">2.5-jdk7</a></td>
+<td>frekele/java:jdk7</td>
+<td>Production</td>
+<td>2.5-jdk7</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.5-jdk7u80/Dockerfile">2.5-jdk7u80</a></td>
+<td>frekele/java:jdk7u80</td>
+<td>Production</td>
+<td>2.5-jdk7u80</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.5-jdk7u79/Dockerfile">2.5-jdk7u79</a></td>
+<td>frekele/java:jdk7u79</td>
+<td>Production</td>
+<td>2.5-jdk7u79</td>
+</tr>
+</tbody>
+</table>
+
+<h4>
+<a id="gradle-24-with-oracle-jdk-branches" class="anchor" href="#gradle-24-with-oracle-jdk-branches" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Gradle 2.4 with Oracle JDK Branches:</h4>
+
+<table>
+<thead>
+<tr>
+<th>Branch</th>
+<th>From</th>
+<th>Usage</th>
+<th>Tag Names</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.4-jdk8/Dockerfile">2.4-jdk8</a></td>
+<td>frekele/java:jdk8</td>
+<td>Production</td>
+<td>2.4-jdk8</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.4-jdk8u102/Dockerfile">2.4-jdk8u102</a></td>
+<td>frekele/java:jdk8u102</td>
+<td>Production</td>
+<td>2.4-jdk8u102</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.4-jdk8u101/Dockerfile">2.4-jdk8u101</a></td>
+<td>frekele/java:jdk8u101</td>
+<td>Production</td>
+<td>2.4-jdk8u101</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.4-jdk8u92/Dockerfile">2.4-jdk8u92</a></td>
+<td>frekele/java:jdk8u92</td>
+<td>Production</td>
+<td>2.4-jdk8u92</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.4-jdk8u91/Dockerfile">2.4-jdk8u91</a></td>
+<td>frekele/java:jdk8u91</td>
+<td>Production</td>
+<td>2.4-jdk8u91</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.4-jdk7/Dockerfile">2.4-jdk7</a></td>
+<td>frekele/java:jdk7</td>
+<td>Production</td>
+<td>2.4-jdk7</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.4-jdk7u80/Dockerfile">2.4-jdk7u80</a></td>
+<td>frekele/java:jdk7u80</td>
+<td>Production</td>
+<td>2.4-jdk7u80</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frekele/docker-gradle/blob/2.4-jdk7u79/Dockerfile">2.4-jdk7u79</a></td>
+<td>frekele/java:jdk7u79</td>
+<td>Production</td>
+<td>2.4-jdk7u79</td>
+</tr>
+</tbody>
+</table>
+
+<h1>
+<a id="dockerfile-extends-from" class="anchor" href="#dockerfile-extends-from" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Dockerfile extends From:</h1>
+
+<ul>
+<li><a href="https://github.com/frekele/docker-java">https://github.com/frekele/docker-java</a></li>
+<li><a href="https://hub.docker.com/r/frekele/java">https://hub.docker.com/r/frekele/java</a></li>
+</ul>
+
+<h2>
+<a id="relations" class="anchor" href="#relations" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Relations:</h2>
+
+<ul>
+<li><a href="https://github.com/just-containers/s6-overlay">https://github.com/just-containers/s6-overlay</a></li>
+</ul>
+
+<h3>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License:</h3>
+
+<p>See <a href="https://github.com/frekele/docker-gradle/blob/dev/GRADLE_LICENSE">GRADLE LICENSE</a></p>
+
+<p>frekele/docker-gradle is <strong>licensed</strong> under the <strong><a href="https://github.com/frekele/docker-gradle/blob/dev/LICENSE">MIT License</a></strong>. The terms of the license are as follows:</p>
+
+<pre><code>The MIT License (MIT)
+
+Copyright (c) 2016 Leandro Kersting de Freitas
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</code></pre>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/frekele/docker-gradle">docker-gradle</a> is maintained by <a href="https://github.com/frekele">frekele</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
