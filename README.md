@@ -5,14 +5,17 @@
 [![GitHub issues](https://img.shields.io/github/issues/frekele/docker-gradle.svg)](https://github.com/frekele/docker-gradle/issues)
 [![GitHub forks](https://img.shields.io/github/forks/frekele/docker-gradle.svg)](https://github.com/frekele/docker-gradle/network)
 [![GitHub stars](https://img.shields.io/github/stars/frekele/docker-gradle.svg)](https://github.com/frekele/docker-gradle/stargazers)
+[![Website](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://frekele.github.io/docker-gradle/)
 
+[![Gradle Image][GradleImage]][GradleWebsite]
 
-Repository: https://hub.docker.com/r/frekele/gradle
+| [Website]  | [GitHub]  | [DockerHub]  |
+
 
 #### Gradle 2.14.1 with Oracle JDK Branches:
 | Branch                       | From                     | Usage        | Tag Names                        |
 | ---------------------------- | ------------------------ | ------------ | ---------------------------------|
-| [2.14.1-jdk8] - latest       | frekele/java:jdk8        | Production   | 2.14.1-jdk8, latest              |
+| [2.14.1-jdk8] - latest       | frekele/java:jdk8        | Production   | 2.14.1-jdk8, 2-jdk8, latest      |
 | [2.14.1-jdk8u102]            | frekele/java:jdk8u102    | Production   | 2.14.1-jdk8u102                  |
 | [2.14.1-jdk8u101]            | frekele/java:jdk8u101    | Production   | 2.14.1-jdk8u101                  |
 | [2.14.1-jdk8u92]             | frekele/java:jdk8u92     | Production   | 2.14.1-jdk8u92                   |
@@ -202,6 +205,11 @@ frekele/docker-gradle is **licensed** under the **[MIT License]**. The terms of 
     SOFTWARE.
 
 
+[GradleImage]: https://raw.githubusercontent.com/frekele/docker-gradle/dev/gradle-logo.png
+[GradleWebsite]: https://gradle.org/
+[Website]: https://frekele.github.io/docker-gradle
+[GitHub]: https://github.com/frekele/docker-gradle
+[DockerHub]: https://hub.docker.com/r/frekele/gradle
 [GRADLE LICENSE]: https://github.com/frekele/docker-gradle/blob/dev/GRADLE_LICENSE
 [MIT LICENSE]: https://github.com/frekele/docker-gradle/blob/dev/LICENSE
 
