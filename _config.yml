@@ -1,0 +1,8 @@
+title: docker-gradle
+description: Gradle (s6-overlay) Docker Image - Extends frekele/java.
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-cayman
+
+gems:
+  - jekyll-mentions
