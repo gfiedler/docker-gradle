@@ -1,6 +1,6 @@
-FROM frekele/java:jdk7
+FROM openjdk:7-jdk
 
-MAINTAINER frekele <leandro.freitas@softdevelop.com.br>
+MAINTAINER Gerald Fiedler <gerald@sftech.de>
 
 ENV GRADLE_VERSION=2.10
 ENV GRADLE_HOME=/opt/gradle

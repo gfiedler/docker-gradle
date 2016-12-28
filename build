@@ -1,1 +1,1 @@
-docker build -t frekele/gradle .
+docker build -t gfiedler/gradle .
