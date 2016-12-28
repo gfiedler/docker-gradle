@@ -1,4 +1,4 @@
-FROM openjdk:7-jdk
+FROM sftech/java:7-jdk
 
 MAINTAINER Gerald Fiedler <gerald@sftech.de>
 
