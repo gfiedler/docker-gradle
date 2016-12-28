@@ -1,1 +1,1 @@
-docker build -t gfiedler/gradle .
+docker build -t sftech/gradle .

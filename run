@@ -1,1 +1,1 @@
-docker run --rm --name gradle gfiedler/gradle
+docker run --rm --name gradle sftech/gradle
